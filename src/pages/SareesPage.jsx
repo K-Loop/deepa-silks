@@ -1,12 +1,13 @@
 import React, { useState, useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { RiSparklingFill, RiSearchLine, RiRestartLine } from "react-icons/ri";
-import { products } from "../data/products";
+import { useCatalog } from "../context/CatalogContext";
 import { sareeCategories } from "../data/categories";
 import ProductCard from "../components/ui/ProductCard";
 import CategoryCard from "../components/ui/CategoryCard";
 
 export default function SareesPage() {
+  const { products } = useCatalog();
   const [searchParams, setSearchParams] = useSearchParams();
   const currentCategory = searchParams.get("category") || "all";
   
@@ -16,7 +17,7 @@ export default function SareesPage() {
   // Sarees only
   const allSarees = useMemo(() => {
     return products.filter((p) => p.type === "saree");
-  }, []);
+  }, [products]);
 
   // Filter & Search logic
   const filteredSarees = useMemo(() => {

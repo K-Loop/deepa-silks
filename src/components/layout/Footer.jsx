@@ -157,9 +157,18 @@ export default function Footer() {
 
         {/* Bottom Disclaimer & Copyright */}
         <div className="pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-stone-400">
-          <p>
-            © {currentYear} Deepa Silks &amp; Readymades (தீபா சில்க்ஸ்). All rights reserved.
-          </p>
+          <div className="flex items-center gap-3 flex-wrap">
+            <p>
+              © {currentYear} Deepa Silks &amp; Readymades (தீபா சில்க்ஸ்). All rights reserved.
+            </p>
+            <span className="text-stone-600">·</span>
+            <Link
+              to="/admin"
+              className="text-[#DFBF7E] hover:text-white transition-colors font-medium flex items-center gap-1"
+            >
+              <span>Admin Portal</span>
+            </Link>
+          </div>
 
           <p className="text-[11px] text-stone-400 text-center md:text-right">
             Note: All displayed product prices and colors are sample catalog references. Exact pricing &amp; availability confirmed via WhatsApp.

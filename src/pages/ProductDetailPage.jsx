@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { RiSparklingFill, RiShareLine, RiArrowRightSLine, RiCheckLine, RiArrowLeftLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa6";
-import { products } from "../data/products";
+import { useCatalog } from "../context/CatalogContext";
 import { formatSamplePrice } from "../lib/utils";
 import { buildWhatsAppUrl } from "../lib/whatsapp";
 import ProductCard from "../components/ui/ProductCard";
 
 export default function ProductDetailPage() {
+  const { products } = useCatalog();
   const { id } = useParams();
   const navigate = useNavigate();
 

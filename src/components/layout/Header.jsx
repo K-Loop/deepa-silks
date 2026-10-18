@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
-import { RiSearchLine, RiMenuLine, RiShoppingBagLine } from "react-icons/ri";
+import { RiSearchLine, RiMenuLine, RiShoppingBagLine, RiCameraLensLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa6";
 import BrandLogo from "../ui/BrandLogo";
 import MobileMenu from "./MobileMenu";
@@ -81,6 +81,16 @@ export default function Header({ onOpenSearch, onOpenCatalog }) {
             >
               <RiSearchLine className="w-5 h-5" />
             </button>
+
+            {/* Admin Studio Shortcut Link */}
+            <Link
+              to="/admin"
+              className="hidden md:flex items-center gap-1 px-2.5 py-1.5 rounded-full border border-[#C6A15B]/40 hover:border-[#78152B] text-stone-700 hover:text-[#78152B] text-xs font-semibold transition-colors bg-[#FFF9EF]/80 shadow-2xs"
+              title="Admin Photo Studio"
+            >
+              <RiCameraLensLine className="w-3.5 h-3.5 text-[#78152B]" />
+              <span className="text-[11px]">Admin</span>
+            </Link>
 
             {/* Quick WhatsApp Catalog Preview Icon Button */}
             {onOpenCatalog && (

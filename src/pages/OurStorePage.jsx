@@ -3,10 +3,12 @@ import { Link } from "react-router-dom";
 import { RiMapPinLine, RiTimeLine, RiPhoneLine, RiStoreLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa6";
 import { siteConfig } from "../config/site";
-import { storeValues, storeGallery } from "../data/collections";
+import { storeValues } from "../data/collections";
+import { useCatalog } from "../context/CatalogContext";
 import { buildGeneralWhatsAppUrl } from "../lib/whatsapp";
 
 export default function OurStorePage() {
+  const { storeGallery } = useCatalog();
   const whatsappUrl = buildGeneralWhatsAppUrl(
     "Hi Deepa Silks! I am planning to visit your store and would like to know more about parking, location, or special wedding appointments."
   );

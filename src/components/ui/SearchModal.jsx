@@ -2,11 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { RiSearchLine, RiCloseLine, RiArrowRightLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa6";
-import { products } from "../../data/products";
+import { useCatalog } from "../../context/CatalogContext";
 import { buildWhatsAppUrl } from "../../lib/whatsapp";
 import { formatSamplePrice } from "../../lib/utils";
 
 export default function SearchModal({ isOpen, onClose }) {
+  const { products } = useCatalog();
   const [query, setQuery] = useState("");
   const inputRef = useRef(null);
 

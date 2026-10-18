@@ -2,9 +2,10 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa6";
 import { RiHeartFill, RiExternalLinkLine } from "react-icons/ri";
 import { siteConfig } from "../../config/site";
-import { instagramMoments } from "../../data/collections";
+import { useCatalog } from "../../context/CatalogContext";
 
 export default function InstagramFeed() {
+  const { instagramMoments } = useCatalog();
   return (
     <section className="bg-white py-14 border-b border-[#C6A15B]/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">

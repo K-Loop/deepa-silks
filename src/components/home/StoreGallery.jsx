@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { RiStackLine, RiSparklingFill, RiGroupLine, RiHandHeartLine, RiArrowRightLine, RiMapPinLine, RiTimeLine } from "react-icons/ri";
-import { storeValues, storeGallery } from "../../data/collections";
+import { storeValues } from "../../data/collections";
+import { useCatalog } from "../../context/CatalogContext";
 import { siteConfig } from "../../config/site";
 
 export default function StoreGallery() {
+  const { storeGallery } = useCatalog();
   const iconMap = {
     Layers: RiStackLine,
     Sparkles: RiSparklingFill,

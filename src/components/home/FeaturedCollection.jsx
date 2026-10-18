@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { RiArrowRightLine, RiSparklingFill } from "react-icons/ri";
-import { products } from "../../data/products";
+import { useCatalog } from "../../context/CatalogContext";
 import ProductCard from "../ui/ProductCard";
 
 export default function FeaturedCollection() {
+  const { products } = useCatalog();
   const [filter, setFilter] = useState("all");
 
   const filteredProducts = products.filter((p) => {

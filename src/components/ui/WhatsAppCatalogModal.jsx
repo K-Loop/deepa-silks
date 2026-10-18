@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { RiSearchLine, RiCloseLine, RiShieldCheckFill, RiPhoneLine } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa6";
-import { products } from "../../data/products";
+import { useCatalog } from "../../context/CatalogContext";
 import { siteConfig } from "../../config/site";
 import { buildWhatsAppUrl, buildGeneralWhatsAppUrl } from "../../lib/whatsapp";
 import { formatSamplePrice } from "../../lib/utils";
 
 export default function WhatsAppCatalogModal({ isOpen, onClose }) {
+  const { products } = useCatalog();
   const [activeTab, setActiveTab] = useState("catalog"); // 'catalog', 'about'
   const [searchQuery, setSearchQuery] = useState("");
 
