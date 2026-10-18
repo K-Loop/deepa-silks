@@ -1,0 +1,156 @@
+/**
+ * Deepa Silks & Readymades - Product Categories & Taxonomy
+ */
+
+export const sareeCategories = [
+  {
+    id: "all",
+    name: "All Sarees",
+    slug: "all",
+    description: "Explore our complete curated selection of South Indian weaves and festive drapes.",
+  },
+  {
+    id: "kanchipuram",
+    name: "Kanchipuram Silk",
+    slug: "kanchipuram",
+    tagline: "Pure Mulberry Silk & Intricate Gold Zari",
+    description: "The crown jewel of South Indian craftsmanship with traditional temple motifs and rich contrast pallus.",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
+    badge: "Heritage",
+  },
+  {
+    id: "soft-silk",
+    name: "Soft Silk",
+    slug: "soft-silk",
+    tagline: "Lightweight Elegance with Subtle Sheen",
+    description: "Featherlight, fluid silk sarees tailored for contemporary comfort without compromising grace.",
+    image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80",
+    badge: "Popular",
+  },
+  {
+    id: "designer-silk",
+    name: "Designer & Banarasi",
+    slug: "designer-silk",
+    tagline: "Modern Fusion & Royal Brocades",
+    description: "Artistic blends of Banarasi floral jaals, cutwork borders, and contemporary designer motifs.",
+    image: "https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80",
+    badge: "Festive",
+  },
+  {
+    id: "bridal",
+    name: "Bridal Sarees",
+    slug: "bridal",
+    tagline: "Auspicious Weaves for the Big Day",
+    description: "Opulent wedding silks woven with high-density gold zari borders and auspicious muhurtham colors.",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80",
+    badge: "Bridal Exclusive",
+  },
+  {
+    id: "cotton",
+    name: "Pure Cotton Sarees",
+    slug: "cotton",
+    tagline: "Breathable Handloom Comfort",
+    description: "Cool, refined Coimbatore, Chettinad, and Mangalgiri cottons with crisp zari and thread borders.",
+    image: "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80",
+    badge: "Daily Grace",
+  },
+  {
+    id: "festive",
+    name: "Festive Sarees",
+    slug: "festive",
+    tagline: "Vibrant Drapes for Celebrations",
+    description: "Richly adorned drapes ideal for Diwali, Pongal, Navratri, and auspicious family poojas.",
+    image: "https://images.unsplash.com/photo-1604014237800-1c9102c219da?auto=format&fit=crop&w=800&q=80",
+    badge: "Celebration",
+  },
+];
+
+export const readymadeCategories = [
+  {
+    id: "all",
+    name: "All Readymades",
+    slug: "all",
+    description: "Browse curated lehengas, kids ethnic wear, kurtis, and festive ensembles.",
+  },
+  {
+    id: "lehengas",
+    name: "Bridal & Party Lehengas",
+    slug: "lehengas",
+    tagline: "Royal Flairs & Intricate Embroidery",
+    description: "Grand flair lehenga cholis with rich zari, resham threadwork, and pre-draped dupattas.",
+    image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=800&q=80",
+    badge: "Grand Festive",
+  },
+  {
+    id: "pavadai-sattai",
+    name: "Pavadai Sattai (Kids)",
+    slug: "pavadai-sattai",
+    tagline: "Traditional Pattu Pavadai for Little Ones",
+    description: "Authentic silk pavadai sattai sets tailored with gentle inner lining for festival celebrations.",
+    image: "https://images.unsplash.com/photo-1574634534894-89d7576c8259?auto=format&fit=crop&w=800&q=80",
+    badge: "Kids Heritage",
+  },
+  {
+    id: "kurtis",
+    name: "Designer Kurtis & Sets",
+    slug: "kurtis",
+    tagline: "Effortless Festive & Occasion Wear",
+    description: "Chanderi, silk blend, and cotton Anarkalis, straight suits, and palazzo coordinates.",
+    image: "https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?auto=format&fit=crop&w=800&q=80",
+    badge: "Modern Ethnic",
+  },
+  {
+    id: "family-wear",
+    name: "Family Matching Collections",
+    slug: "family-wear",
+    tagline: "Coordinated Elegance for Special Days",
+    description: "Harmonious festive attire sets for mother-daughter, siblings, and family celebrations.",
+    image: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?auto=format&fit=crop&w=800&q=80",
+    badge: "Family Festive",
+  },
+];
+
+export const homeFeaturedCategories = [
+  {
+    id: "kanchipuram-feature",
+    title: "Kanchipuram Silks",
+    subtitle: "Authentic Heritage Weaves",
+    link: "/sarees?category=kanchipuram",
+    image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: "bridal-feature",
+    title: "Bridal Sarees",
+    subtitle: "Muhurtham & Reception Grandeur",
+    link: "/sarees?category=bridal",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: "softsilk-feature",
+    title: "Soft Silk Elegance",
+    subtitle: "Fluid Drapes with Royal Luster",
+    link: "/sarees?category=soft-silk",
+    image: "https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: "lehenga-feature",
+    title: "Festive Lehengas",
+    subtitle: "Stunning Silhouette & Craftsmanship",
+    link: "/readymades?category=lehengas",
+    image: "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: "pavadai-feature",
+    title: "Pavadai Sattai",
+    subtitle: "Pure Silk Ethnic Wear for Kids",
+    link: "/readymades?category=pavadai-sattai",
+    image: "https://images.unsplash.com/photo-1574634534894-89d7576c8259?auto=format&fit=crop&w=800&q=80",
+  },
+  {
+    id: "cotton-feature",
+    title: "Handloom Cottons",
+    subtitle: "Coimbatore & Chettinad Weaves",
+    link: "/sarees?category=cotton",
+    image: "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=80",
+  },
+];
